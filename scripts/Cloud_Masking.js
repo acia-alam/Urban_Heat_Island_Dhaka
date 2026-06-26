@@ -7,8 +7,8 @@ var cloudShadowBitMask = (1 << 4);
 // Get the pixel QA band.
 var qa = col.select('QA_PIXEL');
 // Both flags should be set to zero, indicating clear conditions.
-var mask = qa.bitwiseAnd(cloudShadowBitMask).eq(0)
-            .and(qa.bitwiseAnd(cloudsBitMask).eq(0));
+var mask = qa.bitwiseAnd(cloudsBitMask).eq(0)
+            .and(qa.bitwiseAnd(cloudShadowBitMask).eq(0));
 return col.updateMask(mask);
 }
 
