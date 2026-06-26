@@ -135,3 +135,34 @@ Map.addLayer(uhi.clip(aoi), uhi_vis, 'UHI')
 //   region: aoi,
 //   fileFormat: 'GeoTIFF',
 // });
+
+// // // // // // //Calculate Statistics // // // // // // // //
+  
+  
+var uhi_stats = uhi.reduceRegion({
+  reducer: ee.Reducer.min()
+            .combine({
+              reducer2: ee.Reducer.max(),
+              sharedInputs: true
+            })
+            .combine({
+              reducer2: ee.Reducer.mean(),
+              sharedInputs: true
+            })
+            .combine({
+              reducer2: ee.Reducer.stdDev(),
+              sharedInputs: true
+            }),
+  geometry: aoi,
+  scale: 30,
+  maxPixels: 1e13
+});
+
+Export.table.toDrive({
+  collection: ee.FeatureCollection([
+    ee.Feature(null, uhi_stats)
+  ]),
+  description: 'UHI_Statistics_2026',
+  folder: 'GEE',
+  fileFormat: 'CSV'
+});
