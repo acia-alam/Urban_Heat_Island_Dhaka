@@ -51,7 +51,15 @@ Dhaka Metropolitan Area, Bangladesh
 - QGIS / ArcGIS Pro
 
 ---
+## Data Download
 
+Large datasets are available here:
+
+- https://drive.google.com/file/d/1wml7EKaQR5sEED5wl5Eq6WKEuRQY5iZq/view?usp=sharing
+- https://drive.google.com/file/d/1G_MxTnMLJ4ivepEyD08x7NUwiWKA7bYH/view?usp=sharing
+- https://drive.google.com/file/d/1ZniB3RZ9RqDB7dYRqw5UcC4f-Dl8wDX6/view?usp=sharing
+
+  ---
 ## Author
 
 Acia Alam
