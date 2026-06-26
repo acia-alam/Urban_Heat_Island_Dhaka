@@ -1,4 +1,4 @@
- // // // NDVI Calculation start ////////////////////
+                              // // // NDVI Calculation start ////////////////////
 
 var ndvi  = image.normalizedDifference(['SR_B5', 'SR_B4']).rename('NDVI')
 Map.addLayer(ndvi, {min:-1, max:1, palette: ['blue', 'white', 'green']}, 'ndvi')
@@ -27,7 +27,7 @@ print('NDVI MAX: ', ndvi_max);
 
 // Export.image.toDrive({
 //   image: ndvi,
-//   description: 'Dhaka_2022_ndvi',
+//   description: 'Dhaka_2026_ndvi',
 //   scale: 30,
 //   maxPixels: 1e13,
 //   folder: 'GEE',
