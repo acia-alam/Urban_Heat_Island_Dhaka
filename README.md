@@ -1,60 +1,47 @@
-# Urban Heat Island (UHI) Analysis Using Google Earth Engine
+# Documentation
 
-## Overview
+This folder contains the supporting documentation, methodology, workflow, and reference materials for the **Urban Heat Island (UHI) Analysis using Google Earth Engine** project.
 
-This project analyzes the Urban Heat Island (UHI) effect using Landsat 8 Collection 2 Level-2 imagery in Google Earth Engine (GEE). The workflow includes cloud masking, NDVI calculation, emissivity estimation, Land Surface Temperature (LST) retrieval, water masking, and UHI mapping using the Z-score method.
+## Contents
 
----
+### Methodology.pdf
 
-## Study Area
+Contains the detailed research methodology, including:
 
-Dhaka Metropolitan Area, Bangladesh
+* Data acquisition
+* Image preprocessing
+* NDVI calculation
+* Fractional vegetation estimation
+* Surface emissivity calculation
+* Land Surface Temperature (LST) retrieval
+* Water masking
+* Urban Heat Island (UHI) analysis
 
----
+### Flowchart.png
 
-## Data Source
+Provides a graphical representation of the research workflow and processing steps.
 
-- Landsat 8 Collection 2 Level-2
-- Google Earth Engine
+### Workflow.png
 
----
+Illustrates the overall workflow of the Urban Heat Island analysis process using Landsat 8 data and Google Earth Engine.
 
-## Methodology
+### References.pdf
 
-1. Image preprocessing
-2. Cloud masking
-3. Surface reflectance scaling
-4. NDVI calculation
-5. Fractional Vegetation (FV)
-6. Surface Emissivity (EM)
-7. Land Surface Temperature (LST)
-8. Water masking using NDWI
-9. Urban Heat Island (UHI) calculation
+Contains the scientific articles, reports, and references used in this project.
 
----
+## Software and Tools
 
-## Output
+* Google Earth Engine (GEE)
+* JavaScript API
+* QGIS / ArcGIS Pro
+* Microsoft PowerPoint (for workflow diagrams)
 
-- True Color Composite
-- NDVI Map
-- Land Surface Temperature Map
-- Water Mask
-- Urban Heat Island Map
-- Statistics
+## Project Author
 
----
-
-## Software
-
-- Google Earth Engine
-- JavaScript API
-- QGIS / ArcGIS Pro
-
----
-## Author
-
-Acia Alam
+**Acia Alam**
 
 M.Sc. in Geography and Environment
 
-Bangladesh
+## License
+
+This documentation is provided for educational and research purposes.
