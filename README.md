@@ -1,8 +1,57 @@
-# Urban Heat Island (UHI) Analysis Using Google Earth Engine
+# Scripts Directory
 
-## Overview
+This folder contains the Google Earth Engine (GEE) JavaScript scripts used for Urban Heat Island (UHI) analysis using Landsat 8 Collection 2 Level-2 imagery.
 
-This project analyzes the Urban Heat Island (UHI) effect using Landsat 8 Collection 2 Level-2 imagery in Google Earth Engine (GEE). The workflow includes cloud masking, NDVI calculation, emissivity estimation, Land Surface Temperature (LST) retrieval, water masking, and UHI mapping using the Z-score method.
+## Files
+
+### `UHI_LST_Analysis.js`
+
+Main script for calculating Land Surface Temperature (LST) and Urban Heat Island (UHI) intensity using the Z-score method.
+
+**Functions included:**
+
+* Cloud masking
+* Radiometric scaling
+* NDVI calculation
+* Fractional vegetation estimation
+* Surface emissivity calculation
+* Land Surface Temperature (LST) retrieval
+* Water body masking
+* Urban Heat Island (UHI) mapping
+* Statistical analysis
+
+---
+
+### `NDVI_Calculation.js`
+
+Calculates the Normalized Difference Vegetation Index (NDVI) from Landsat 8 imagery.
+
+**Formula:**
+
+NDVI = (NIR - Red) / (NIR + Red)
+
+---
+
+### `Water_Masking.js`
+
+Calculates the Normalized Difference Water Index (NDWI) and masks water bodies from the study area.
+
+**Formula:**
+
+NDWI = (Green - NIR) / (Green + NIR)
+
+---
+
+### `Cloud_Masking.js`
+
+Removes clouds and cloud shadows using the QA_PIXEL band of Landsat 8 Collection 2 Level-2 data.
+
+---
+
+## Data Source
+
+* Landsat 8 Collection 2 Level-2
+* Google Earth Engine Data Catalog
 
 ---
 
@@ -12,43 +61,10 @@ Dhaka Metropolitan Area, Bangladesh
 
 ---
 
-## Data Source
+## Requirements
 
-- Landsat 8 Collection 2 Level-2
-- Google Earth Engine
-
----
-
-## Methodology
-
-1. Image preprocessing
-2. Cloud masking
-3. Surface reflectance scaling
-4. NDVI calculation
-5. Fractional Vegetation (FV)
-6. Surface Emissivity (EM)
-7. Land Surface Temperature (LST)
-8. Water masking using NDWI
-9. Urban Heat Island (UHI) calculation
-
----
-
-## Output
-
-- True Color Composite
-- NDVI Map
-- Land Surface Temperature Map
-- Water Mask
-- Urban Heat Island Map
-- Statistics
-
----
-
-## Software
-
-- Google Earth Engine
-- JavaScript API
-- QGIS / ArcGIS Pro
+* Google Earth Engine account
+* Google Earth Engine JavaScript Code Editor
 
 ---
 
@@ -57,5 +73,3 @@ Dhaka Metropolitan Area, Bangladesh
 Acia Alam
 
 M.Sc. in Geography and Environment
-
-Bangladesh
