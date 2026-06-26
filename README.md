@@ -1,61 +1,47 @@
-# Urban Heat Island (UHI) Analysis Using Google Earth Engine
+# Data Directory
 
 ## Overview
 
-This project analyzes the Urban Heat Island (UHI) effect using Landsat 8 Collection 2 Level-2 imagery in Google Earth Engine (GEE). The workflow includes cloud masking, NDVI calculation, emissivity estimation, Land Surface Temperature (LST) retrieval, water masking, and UHI mapping using the Z-score method.
+This folder contains the datasets and supporting files used for the Urban Heat Island (UHI) analysis conducted using Google Earth Engine (GEE) and Landsat 8 imagery.
 
----
+## Data Sources
 
-## Study Area
+### Satellite Imagery
 
-Dhaka Metropolitan Area, Bangladesh
+* **Dataset:** Landsat 8 Collection 2 Level-2
+* **Source:** United States Geological Survey (USGS)
+* **Access Platform:** Google Earth Engine (GEE)
+* **Temporal Coverage:** January 2026 – March 2026
+* **Spatial Resolution:** 30 meters
 
----
+### Area of Interest (AOI)
 
-## Data Source
+The study area boundary shapefile used for clipping and analysis is stored in the `AOI/` folder.
 
-- Landsat 8 Collection 2 Level-2
-- Google Earth Engine
+## Folder Structure
 
----
+data/
+├── AOI/
+│ ├── dhaka.cpg
+│ ├── dhaka.dbf
+│ ├── dhaka.prj
+│ └── dhaka.sbn
+| |__ dhaka.shp
+| |__ dhaka.shp.xml
+| |__ dhaka.shx
 
-## Methodology
+## Notes
 
-1. Image preprocessing
-2. Cloud masking
-3. Surface reflectance scaling
-4. NDVI calculation
-5. Fractional Vegetation (FV)
-6. Surface Emissivity (EM)
-7. Land Surface Temperature (LST)
-8. Water masking using NDWI
-9. Urban Heat Island (UHI) calculation
+* Raw Landsat imagery is not included in this repository because it is accessed directly through Google Earth Engine.
+* Large output files may be stored externally using Google Drive, Zenodo, or Git Large File Storage (Git LFS).
+* Sample outputs are provided for demonstration and reproducibility purposes.
 
----
+## Coordinate Reference System
 
-## Output
-
-- True Color Composite
-- NDVI Map
-- Land Surface Temperature Map
-- Water Mask
-- Urban Heat Island Map
-- Statistics
-
----
-
-## Software
-
-- Google Earth Engine
-- JavaScript API
-- QGIS / ArcGIS Pro
-
----
+* Datum: BUTM2010
+* EPSG Code: 4326
 
 ## Author
 
 Acia Alam
-
 M.Sc. in Geography and Environment
-
-Bangladesh
