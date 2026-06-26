@@ -11,7 +11,7 @@ return image.addBands(opticalBands, null, true)
 
 // Filter the collection, first by the aoi, and then by date.
 var image = ee.ImageCollection('LANDSAT/LC08/C02/T1_L2') // dataset
-.filterDate('2026-03-01','2026-05-01') // change this time period by your own
+.filterDate('2026-01-01','2026-03-01') // change this time period by your own
 .filterBounds(aoi)
 .map(maskL8sr)
 .map(applyScaleFactors)
